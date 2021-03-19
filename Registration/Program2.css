@@ -1,0 +1,112 @@
+* {
+ margin: 0;
+ padding: 0;
+ font-family: Arial;
+ box-sizing: border-box;
+}
+body {
+ height: 1000px;
+ overflow: hidden;
+ min-height: 100%;
+}
+.container {
+ display: flex;
+ background-color: rgb(104, 255, 129);
+}
+.container img {
+ width: 100px;
+ height: 100px;
+ margin: 4px 10px;
+}
+.container h1 {
+ margin: auto;
+ font-size: 50px;
+ text-shadow: 3.5px 0 rgb(241, 248, 144);
+}
+.navigation nav ul {
+ background-color: rgb(241, 248, 144);
+ display: flex;
+ padding: 10px;
+}
+.navigation nav ul li {
+ list-style: none;
+}
+.navigation nav ul li a {
+ list-style: none;
+ text-decoration: none;
+ font-size: 25px;
+ padding: 5px 3px;
+ color: black;
+ margin: 14px 15px;
+}
+.navigation nav ul li a:hover {
+ cursor: pointer;
+ color: rgb(255, 255, 255);
+ transition: 0.6s ease;
+ border-radius: 3px;
+ background-color: rgb(252, 125, 125);
+}
+form {
+ background-color: rgb(42 226 222);
+ height: 100%;
+ width: 100%;
+}
+.formm h2 {
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 1.9rem;
+ color: rgb(158 88 88);
+}
+.reg-detail {
+ color: white;
+ border: 3px solid rgb(255, 255, 255);
+ margin: auto;
+ width: 70%;
+ border-radius: 6px;
+ background-color: rgb(129 146 112);
+}
+::placeholder {
+ color: white;
+}
+.reg-detail input {
+ border: 3px solid rgb(255, 255, 255);
+ font-size: large;
+ color: white;
+ border-radius: 4px;
+ width: 69%;
+ padding: 5px 4px;
+ margin: 10px 55px;
+ background-color: rgb(21, 255, 0);
+}
+.reg-detail label {
+ margin: 19px;
+ font-size: 1.1rem;
+}
+.regbtn {
+ text-align: center;
+ padding: 2px;
+}
+.regbtn button {
+ font-size: 1.3rem;
+ border: 3px solid rgb(16, 36, 36);
+ border-radius: 4px;
+ color: rgb(255, 255, 255);
+ padding: 6px 4px;
+ background-color: rgb(106 104 204);
+}
+.regbtn button:hover {
+ border-radius: 3px;
+ background-color: rgb(125, 229, 252);
+ cursor: pointer;
+ color: rgb(255, 255, 255);
+ transition: 0.6s ease;
+}
+footer {
+ margin: 12px 23px;
+ text-align: center;
+ background-color: rgb(252, 125, 125);
+ color: white;
+}
+footer p {
+ padding: 4px;
+}

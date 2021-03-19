@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Light Bulb Experiment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    	body {
+    		text-align: center;
+    		margin-top: 40px;
+    	}
+    </style>
+</head>
+<body>
+	<h3 align=right>Name : Dipesh Gohil <br> Enrollment : 190023107002 </h3>
+<br><br>
+	<h1 style="color: black;">Light Bulb Experiment</h1>
+	<p style="color: red">Click on the button and change color of light.</p>
+
+	
+
+	<img id="myImage" src="images/bulb.jpg" width="100" height="180">
+
+	<p>
+	<button type="button" onclick="light(0)">Light off</button>
+	<button type="button" onclick="light(1)" style="background-color: yellow;">Light</button>
+	<button type="button" onclick="light(2)" style="background-color: red;">Red</button>
+	<button type="button" onclick="light(3)" style="background-color: green;">Green</button>
+
+	</p>
+
+	<script>
+	function light(sw) {
+	  var pic;
+	  if (sw == 0) {
+	    pic = "images/bulb.jpg"
+	  }
+	  else if(sw == 1){
+	  	pic = "images/bulb2.jpg"
+	  }
+	  else if(sw == 2){
+	  	pic = "images/bulb4.jpg"
+	  }
+	    
+	    else {
+	    pic = "images/bulb3.jpg"
+	  }
+	  document.getElementById('myImage').src = pic;
+	}
+	</script>
+
+</body>
+</html>
