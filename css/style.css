@@ -73,7 +73,7 @@
 .detail table tr th {
     font-size: 25px;
     text-align: center;
-    background-color:#a70808;
+    background-color:#1ea528;
     color: #FFF;
     position: sticky;
     top: 0;
@@ -86,7 +86,7 @@ th, td {
     text-align: center;
 }
 .detail table tr:nth-child(odd){
-    background-color: rgba(252, 72, 72, 0.315);
+    background-color: rgb(116 220 90 / 32%);
 }
 .detail table tr td a {
     color: red;
