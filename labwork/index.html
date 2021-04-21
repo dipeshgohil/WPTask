@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AIT || Registration Form</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="./script.js"></script>
+<link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fon
+t-awesome.min.css">
+</head>
+<body>
+<div class="container">
+<h3>Made by : Dipesh Gohil</h3>
+<h3>Enrollment Number : 190023107002 </h3>
+<img src="logo.png" alt="ait-logo">
+<h1>AHMEDABAD INSTITUTE OF TECHNOLOGY</h1>
+</div>
+<form method="POST" action="index.html">
+<div class="formm">
+<h2>Registration Form</h2>
+</div>
+<div class="reg-detail">
+<br>
+<label><b>First Name</b></label>
+<input type="text" pattern="[A-Za-z]+" placeholder="Enter
+Your First Name" name="fname" id="fname" required><br>
+<label><b>Last Name</b></label>
+<input type="text"pattern="[A-Za-z]+" placeholder="Enter
+Your Last Name" name="Lname" id="lname" required><br>
+<label><b>Phone No.</b></label>
+<input type="tel" pattern="[0-9]{10}" placeholder="Enter
+Your Phone Number" maxlength="10" name="phone" required id="phone"><br>
+<label><b>Password.</b></label>
+<input type="password" pattern=".{8,}" maxlength="8"
+title="Enter minimum 8 number" placeholder="********" name="password"
+id="password" required><br>
+<label><b>Email Add:</label>
+<input type="email" placeholder="Enter Your Email Address"
+name="email" id="email" required><br>
+<label><b>Local Add:</b></label>
+<input type="address" placeholder="Enter Your Local
+Address" name="laddress" id="laddress"><br>
+<label>Local address is same as Permanent</label>
+<input type="checkbox" class="coco" value="" name="filltoo"
+id="filltoo" onclick="filladd()" /><br>
+<label id="perm"><b>Permanent A.</b></label>
+<input type="address" placeholder="Enter Your Permanent
+Address" name="paddress" id="paddress"><br>
+CSS CODE
+<br>
+</div>
+</form>
+<div class="regbtn">
+<button onclick="myFunction()">Register</button>
+</div>
+</html>

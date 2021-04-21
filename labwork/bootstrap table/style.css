@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    margin: 25px;
+}
+hr {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: black;
+    padding: 2px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Concept Of Pseudo Classes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="my-info" style="margin:5px; color:#272833;">
+
+        <p style="text-align: right;">Name : Dipesh Gohil</p>
+        <p style="text-align: right;">Enrollment : 190023107002</p>
+    </div>
+    <div class="main">
+        <h1>Concept Of Pseudo Classes </h1>
+        <hr>
+        <h1>Select Background Color</h1>
+
+        <form>
+            <label for="favcolor">Select your favorite color :</label>
+            <input type="color" id="colorInput">
+            <input type="button" id="colorbutton" value="Click Here" onclick="changeColor()">
+        </form>             
+        <p>Here , I was used Pseudo class in heading and button.</p>
+   </div>
+
+    
+   <script>
+    function changeColor() {
+        let color = document.getElementById("colorInput").value;
+
+        document.body.style.backgroundColor = color;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basic</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="">
+        <center><h1>JavaScript Basic</h1></center>
+    </div>
+
+    <div class="container">
+        <div class="sidenav">
+            <a href="#datatype">JS Variable</a>
+            <a href="#datatype">JS Datatype</a>
+            <a href="#operator">JS Operators </a>
+            <a href="#object">JS Objects</a>
+            <a href="#function">JS Function</a>
+            <a href="#events">JS Events</a>
+            <a href="#string">JS Strings & Methods</a>
+            <a href="#number">JS Numbers & Methods</a>
+            <a href="#array">JS Arrays & Methods</a>
+            <a href="#date">JS Dates</a>
+            <a href="#math">JS Maths</a>
+            <a href="#condition">JS Conditions</a>
+            <a href="#loop">JS Loops</a>
+            <a href="#dom">JS HTML-DOM</a>
+        </div>
+        
+        <div class="main">
+           <div id="datatype">
+               <div class="title">
+                    <h2>JavaScript Variable & Dataype</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p id="var_demo"></p>
+
+                    <script>
+                        {
+                        let a = 15;
+                        let b = 6.2;
+                        let c = "Welcome"
+                        let d = {firstName:"Dipesh", lastName:"Gohil"};
+                        let e = true;
+                        let f = ["dhoni", "virat", "rohit"]
+                        document.getElementById("var_demo").innerHTML =
+                        "<b>JS handale many data type like : </b>" + "<br>" +
+                        "Integer : "+ a +"<br>" +
+                        "Float : "+ b + "<br>" +
+                        "String : "+ c + "<br>" +
+                        "Object : "+ d.firstName + "<br>" +
+                        "Boolean : "+ e + "<br>" +
+                        "Array : "+ f + "<br>"+
+                        "Type of undefined : " + typeof undefined;
+                        }
+                    </script>
+                </div>
+           </div>
+
+           <div id="operator">
+                <div class="title">
+                    <h2>JavaScript Operators</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p id="oper_demo1"></p>
+                    <script>
+                        {
+                        let a = 20;
+                        let b = 10;
+                        
+                        document.getElementById("oper_demo1").innerHTML =
+                        "<b>Arithmatic Operators : </b>" + "<br>" +
+                        "*here value of a = 20 and b = 10. <br>" +
+                        "Addition : "+ (a+b) +"<br>"+
+                        "Substraction : "+ (a-b) +"<br>"+
+                        "Multiplication : "+ (a*b) +"<br>"+
+                        "Devesion : "+ (a/b) +"<br>"+
+                        "Exponentiation : "+ (a**b) +"<br>"+
+                        "Modulus : "+ (a%b) +"<br>"+
+                        "Increment of a : "+ (a++) +"<br>"+
+                        "Decrement of a : "+ (a--) +"<br>";
+                        
+                        }
+                    </script>
+                </div>
+                <div class="intro">
+                    <p id="oper_demo2"></p>
+                    <script>
+                        {
+                        let a = 20;
+                        let b = 10
+                        
+                        document.getElementById("oper_demo2").innerHTML =
+                        "<b>Assignment Operators : </b>" + "<br>" +
+                        "*here value of a = 20 and b = 10. <br>" +
+                        "a+=b : "+ (a+=b) +"<br>"+
+                        "a-=b : "+ (a-=b) +"<br>"+
+                        "a*=b : "+ (a*=b) +"<br>"+
+                        "a/=b : "+ (a/=b) +"<br>"+
+                        "a**=b : "+ (a**=b) +"<br>"+
+                        "a%=b : "+ (a%=b) +"<br>"+
+                        "a=b : "+ (a=b) +"<br>";
+                        
+                        }
+                    </script>
+                </div>
+                <div class="intro">
+                    <p id="oper_demo3"></p>
+                    <script>
+                        {
+                        let a = 20;
+                        let b = 10
+                        
+                        document.getElementById("oper_demo3").innerHTML =
+                        "<b>Comparision Operators : </b>" + "<br>" +
+                        "*here value of a = 25 and b = 10. <br>" +
+                        "Equal to : "+ (a==b) +"<br>"+
+                        "Not equal to : "+ (a!=b) +"<br>"+
+                        "Less then : "+ (a<b) +"<br>"+
+                        "Grateer then : "+ (a>b) +"<br>"+
+                        "Lessthen or equal to : "+ (a<=b) +"<br>"+
+                        "Grater then or equal to : "+ (a>=b) +"<br>";
+                        }
+                    </script>
+                </div>
+                <div class="intro">
+                    <p id="oper_demo4"></p>
+                    <script>
+                        {
+                        let a = 20;
+                        let b = 10
+                        
+                        document.getElementById("oper_demo4").innerHTML =
+                        "<b>Logical Operators : </b>" + "<br>" +
+                        "*here value of a = 20 and b = 10. <br>" +
+                        "Logical and between a < b and a > b : "+ (a<b && b>a) +"<br>"+
+                        "Logical or between a < b or a > b : "+ (a<b || a>b) +"<br>"+
+                        "Logical not between a==b : "+ !(a==b) +"<br>";
+                        }
+                    </script>
+                </div>
+                <div class="intro">
+                    <p id="oper_demo5"></p>
+                    <script>
+                        {
+                        let a = 20;
+                        let b = 10
+                        
+                        document.getElementById("oper_demo5").innerHTML =
+                        "<b>Bitwise Operators : </b>" + "<br>" +
+                        "*here value of a = 25 and b = 10. It work on 32 bit number.<br>" +
+                        "AND : "+ (a&b) +"<br>"+
+                        "OR : "+ (a|b) +"<br>"+
+                        "NOT : "+ (~a) +"<br>"+
+                        "XOR : "+ (a^b) +"<br>"+
+                        "Left Shift : "+ (a<<b) +"<br>"+
+                        "Right Shift : "+ (a>>b) +"<br>";
+
+                        }
+                    </script>
+                </div>
+            </div>
+            <div id="object">
+                <div class="title">
+                    <h2>JavaScript Objects</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p id="obj_demo"></p>
+
+                    <script>
+                        {
+                            var employee = {
+                                firstName: "dipesh",
+                                lastName: "gohil",
+                                Gender : "Male",
+                                age: 21,
+                                salary: 40000,
+                                fullName : function() {
+                                    return this.firstName + " " + this.lastName;
+                                }
+                            };
+                        document.getElementById("obj_demo").innerHTML =
+                        "<b>JS Objects have properties and methods. <br> Here Employee is object and it's properties is given below : </b>" + "<br>" +
+                        "First Name : " + employee.firstName + "<br>" +
+                        "last Name : " + employee.lastName + "<br>" +
+                        "Age : " + employee.age + "<br>" +
+                        "Gender : " + employee.gender + "<br>" +
+                        "Salary : " + employee.salary + "<br>" +
+                        "<b>And method is given below : </b><br>" +
+                        "Full Name : " + employee.fullName() + "<br>" ;
+
+                        }
+                    </script>
+                </div>
+            </div>
+            <div id="function">
+                <div class="title">
+                    <h2>JavaScript Function</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p><b>Fahrenheit to Celsius Converter using function :</b></p><br>
+                    <input type="number" id="numf" placeholder="Enter temperature in Fahrenheit " style="width: 250px; height: 25px;"><br><br>
+                    <button type="submit" id="btn" onclick="FtoC()">Submit</button> 
+                    <br><br>
+                    <p id="fun_demo"></p>
+
+                    <script>
+                        function FtoC() {
+                            var f = document.getElementById("numf").value;
+                            document.getElementById("fun_demo").innerHTML = 
+                            "The temperature in Celsius is : " + (5/9) * (f-32) + "C";;
+                        }
+                        
+                    </script>
+                </div>
+            </div>
+            <div id="events">
+                <div class="title">
+                    <h2>JavaScript Events</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p><b>Display Date and Time using onclick event :</b></p><br>
+                    <button type="submit" id="btn" onclick="displayDate()">Click Here</button> 
+                    <br><br>
+                    <p id="event_demo"></p>
+
+                    <script>
+                        function displayDate() {
+                            document.getElementById("event_demo").innerHTML = Date();
+                        }
+                        
+                    </script>
+                </div>
+            </div>
+            <div id="string">
+                <div class="title">
+                    <h2>JavaScript Strings & Methods</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p><b>JS String is Given below : </b></p>
+                    <p id="str_demo"></p>
+
+                    <script>
+                        {
+                            let str = "Hello I am a student of AIT.";
+                            document.getElementById("str_demo").innerHTML = str + "<br> <br>" +
+                            "<b>The Methods that is applied on string is given below :</b> <br>" +
+                            "Length of string is : " +str.length + "<br>" +
+                            "Index of 'student' is : " +str.indexOf("student") + "<br>" +
+                            "Last index of 'o' is : " +str.lastIndexOf("o") + "<br>" +
+                            "Search a 'AIT' in string  : " +str.search("AIT") + "<br>" +
+                            "Slice a 'student of AIT' is : " +str.slice(13,27) + "<br>" +
+                            "Substring 'AIT' in string : " +str.substring(24,27) + "<br>" +
+                            "Replace AIT to GTU : " +str.replace("AIT","GTU") + "<br>" +
+                            "Uppercase of string : " +str.toUpperCase() + "<br>" +
+                            "Lowercase of string : " +str.toLowerCase() + "<br>" +
+                            "Charecter at 6th position is : " + str.charAt(6) + "<br>" ;
+
+                        }
+                        
+                    </script>
+                </div>
+            </div>
+            <div id="number">
+                <div class="title">
+                    <h2>JavaScript Numbers & Methods</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p><b>JS numbers is Given below : </b></p>
+                    <p id="num_demo"></p>
+
+                    <script>
+                        {
+                            let num1 = 12 ;
+                            let num2 = 56.28122 ;
+                            document.getElementById("num_demo").innerHTML = 
+                            "num1 is : "+num1 +"<br> num2 is : "+ num2 + 
+                            "<br> Type of NaN is : " + typeof NaN +
+                            "<br><br><b>The Methods that is applied on numbers is given below :</b> <br>" +
+                            "num1 as base 10 (Decimal) is : " + num1.toString(10) + "<br>" +
+                            "num1 as base 16 (HEX) is : " + num1.toString(16) + "<br>" +
+                            "num1 as base 2 (Binary) is : " + num1.toString(2) + "<br>" +
+                            "num2 rounded and print using exponential notation : " + num2.toExponential(2) + "<br>" +
+                            "num2 print specified number of decimal : " + num2.toFixed(3) + "<br>" +
+                            "Maximum number value in JS is : " + Number.MAX_VALUE + "<br>" +
+                            "Maximum number value in JS as Integer is : " + Number.MAX_SAFE_INTEGER + "<br>" +
+                            "Minimum number value in JS is : " + Number.MIN_VALUE + "<br>" +
+                            "Maximum number value in JS as Integer is : " + Number.MIN_SAFE_INTEGER + "<br>" ;
+                        }
+                    </script>
+
+                </div>
+            </div>
+            <div id="array">
+                <div class="title">
+                    <h2>JavaScript Arrays & Methods</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p><b>JS Array is Given below : </b></p>
+                    <p id="ary_demo"></p>
+
+                    <script>
+                        {
+                            let ary1 = ["dipesh","kirtan",30,17.32] ;
+                            let ary2 = ["Ahmedabad","Rajkot","Surat"] ;
+                            document.getElementById("ary_demo").innerHTML = 
+                            "array1 is : "+ary1 +"<br> array2 is : "+ ary2 + "<br><br>" +
+                            "<b>The Methods that is applied on numbers is given below : </b><br>"+
+                            "Length of the array1 is : " + ary1.length + "<br>" +
+                            "First element of array2 is : " + ary2[0] + "<br>" +
+                            "Last element of array2 is : " + ary2[ary2.length-1] +"<br>" +
+                            "Array2 as string : " + ary2.toString() + "<br>" +
+                            "Add * between elements in array1 : " + ary1.join(" * ") + "<br>" +
+                            "Last element removed :  " + ary1.pop() + "<br>" +
+                            "Add new element at last : " + ary1.push("New") + "<br>" +
+                            "Removed first element :  " + ary1.shift() + "<br>" +
+                            "Reverse array1 :  " + ary1.reverse() + "<br>" ;
+
+                        }
+                    </script>
+                    
+                </div>
+            </div>
+            <div id="date">
+                <div class="title">
+                    <h2>JavaScript Dates</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p><b>JS Date is Given below : </b></p>
+                    <p id="date_demo"></p>
+
+                    <script>
+                        {
+                            var d1 = new Date();
+                            var d2 = new Date(2010, 5, 12, 10, 33, 30, 0);
+                            var d3 = new Date(2012, 11, 12);
+                            document.getElementById("date_demo").innerHTML = 
+                            "JS current date is : " + d1 + "<br>" +
+                            "Specified date and time is : " + d2 +"<br>" +
+                            "Only year, month and day : " + d3 + "<br>" + 
+                            "Date converted into UTC string standard : " + d1.toUTCString() + "<br>" + 
+                            "Date converted into date string standard : " + d1.toDateString() + "<br>" +
+                            "Get year : " + d1.getFullYear() + "<br>" +
+                            "Get month : " + d1.getMonth() + "<br>" +
+                            "Get date : " + d1.getDate() + "<br>";
+                        }
+                    </script>
+                    
+                </div>
+            </div>
+            <div id="math">
+                <div class="title">
+                    <h2>JavaScript Maths</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p><b>The JavaScript Math object allows you to perform mathematical tasks on numbers : </b></p>
+                    <p id="math_demo"></p>
+
+                    <script>
+                        {
+                        
+                            document.getElementById("math_demo").innerHTML = 
+                                "Returns Euler's number : " + Math.E  + "<br>" +
+                                "Returns PI : " + Math.PI   + "<br>" +
+                                "Returns the square root of 2 : " + Math.SQRT2  + "<br>" +
+                                "Returns the square root of 1/2 " + Math.SQRT1_2  + "<br>" +
+                                "Returns the natural logarithm of 2 " + Math.LN2  + "<br>" +
+                                "Returns the natural logarithm of 10 : " + Math.LN10   + "<br>" +
+                                "Returns base 2 logarithm of E " + Math.LOG2E + "<br>" +
+                                "Returns base 10 logarithm of E " + Math.LOG10E + "<br>" +
+                                "Round value 4.7 is : " + Math.round(4.7) + "<br>" +
+                                "Round value -4.7 is : " + Math.round(-4.7) + "<br>" +
+                                "Ceil value 5.3 is : " + Math.ceil(5.3) + "<br>" +
+                                "Round value -5.3 is : " + Math.ceil(-5.3) + "<br>" +
+                                "Sign of -3 is : " + Math.sign(-3) + "<br>" +
+                                "Power 2^5 is : " + Math.pow(2,5) + "<br>" +
+                                "Random number between 0 to 9 : " +Math.floor(Math.random()*10) + "<br>" ;
+                                
+                        }
+                    </script>
+                    
+                </div>
+            </div>
+            <div id="condition">
+                <div class="title">
+                    <h2>JavaScript Conditions</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p><b>Find Largest Number : </b></p><br>
+                    <input type="number" id="no1" placeholder="Enter First Number " style="width: 250px; height: 25px;">
+                    <input type="number" id="no2" placeholder="Enter Second Number " style="width: 250px; height: 25px;">
+                    <input type="number" id="no3" placeholder="Enter third Number " style="width: 250px; height: 25px;"><br><br>
+                    <button type="submit" id="btn" onclick="max()">Submit</button> 
+                    <br><br>
+                    <p id="con_demo"></p>
+
+                    <script>
+                        function max() {
+                            let n1 = parseFloat(document.getElementById("no1").value);
+                            let n2 = parseFloat(document.getElementById("no2").value);
+                            let n3 = parseFloat(document.getElementById("no3").value);
+                            let max ;
+                            if (n1 >= n2 && n1 >= n3) {
+                                max = n1;
+                            } 
+                            else if (n2 >= n1 && n2 >= n3) {
+                                max = n2;
+                            } 
+                            else {
+                                max = n3;
+                            }
+                            document.getElementById("con_demo").innerHTML = "Largest Number is : " + max;
+                        }
+                        
+                    </script>
+                </div>
+            </div>
+            <div id="loop">
+                <div class="title">
+                    <h2>JavaScript Loops</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p><b>Pyramid Maker Using For loop:  </b></p><br>
+                    <input type="number" id="pnum" placeholder="Enter Total Number of Rows " style="width: 250px; height: 25px;"><br><br>
+                    <button type="submit" id="btn" onclick="pera()">Submit</button> 
+                    <br><br>
+                    <p id="loop_demo"></p>
+
+                    <script>
+                        function pera() {
+                            let totalNumberofRows = parseFloat(document.getElementById("pnum").value);
+                            let temp = "";
+                            for (var i = 1; i <= totalNumberofRows; i++) {
+                                for (var j = 1; j <= i; j++)
+                                    {
+                                        temp += j;
+                                    }
+                                    temp += "<br>";
+                            }
+                            document.getElementById("loop_demo").innerHTML = temp ;
+                            
+                        }
+                        
+                    </script>
+                </div>
+                <div class="intro">
+                    <p><b>Find Fectorial Number using While Loop :  </b></p><br>
+                    <input type="number" id="fnum" placeholder="Enter the Number " style="width: 250px; height: 25px;"><br><br>
+                    <button type="submit" id="btn" onclick="fecto()">Submit</button> 
+                <br><br>
+                    <p id="loop_demo2"></p>
+
+                    <script>
+                        function fecto() {
+                        let fecto = parseFloat(document.getElementById("fnum").value);
+                        let temp2 = fecto ;
+                            if (fecto === 0 || fecto === 1){ 
+                                temp2 = 1;
+                            }
+                            while (fecto > 1) { 
+                                fecto--;
+                                temp2 *= fecto;
+                            }
+
+                            document.getElementById("loop_demo2").innerHTML = "The Fectorial of given number is : " + temp2;
+                            } 
+                    </script>
+                </div>
+            </div>
+            <div id="dom">
+                <div class="title">
+                    <h2>JavaScript HTML - DOM</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p><b>HTML DOM Methos</b></p>
+                    <p id="dom_demo1"></p>
+                    <p id="dom_demo2"></p><br>
+                    <button id="btn" onclick="dom_wr()"> Click Here </button>
+
+
+                    <script>
+                        {
+                        
+                            document.getElementById("dom_demo1").innerHTML = 
+                                "This is printing using DOM getElementById method and innerHTML property." ;
+                            document.getElementById("dom_demo2").innerHTML =
+                                "This is printing using DOM getElementById method and style property";
+                            document.getElementById("dom_demo2").style.color = "#118d8d";
+
+                            function dom_wr(){
+                            document.write("This is printing using write() method.");
+                            }
+                        }
+                    </script>
+                    
+                </div>
+            </div>
+            <div id="none" style="padding-bottom: 100px;">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

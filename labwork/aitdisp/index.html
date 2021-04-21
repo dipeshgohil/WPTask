@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+p {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+<h1 style="text-align: center;">Dipesh Gohil, 190023107002</h1>
+<p id="demo"></p>
+<script>
+var var1 = setInterval(time, 1000);
+var fs = 5;
+var a = document.getElementById("demo");
+function time() {
+a.innerHTML = 'AHMEDABAD INSTITUTE OF TECHNOLOGY';
+a.setAttribute('style', "font-size: " + fs + "px; color: blue");
+fs += 5;
+if(fs >= 55 ){
+clearInterval(var1);
+}
+}
+</script>
+</body>
+</html>

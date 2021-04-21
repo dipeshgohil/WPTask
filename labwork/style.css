@@ -1,0 +1,93 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Arial;
+box-sizing: border-box;
+}
+body{
+height:1113px;
+overflow: scroll;
+min-height:100%;
+}
+.container{
+display: flex;
+background-color: rgb(255, 104, 230);
+}
+.container img{
+width: 100px;
+height: 100px;
+margin: 4px 10px;
+}
+.container h1{
+margin: auto;
+font-size: 50px;
+/* text-shadow: 3.5px 0 rgb(241, 248, 144) ; */
+}
+form{
+/* background-color: rgb(192, 247, 138); */
+
+height: 100%;
+width: 100%;
+}
+.formm h2{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 2.9rem;
+
+}
+.reg-detail {
+border: 3px solid black;
+margin: auto;
+width: 86%;
+height: 65%;
+border-radius: 6px;
+/* background-color: rgb(154, 230, 79); */
+background-image: url('4.jpg');
+background-repeat: no-repeat;
+}
+.reg-detail input{
+order: 3px solid blue;
+font-size: medium;
+border-radius: 4px;
+width: 708px;
+padding: 7px 15px;
+margin: 24px -10px;
+/* background-color: rgb(176, 201, 238); */
+background-color: rgb(147, 242, 255);
+}
+.reg-detail label{
+margin: 53px 95px;
+padding: 3px 2px;
+font-size: 1.2rem;
+}
+.regbtn{
+text-align: center;
+padding: 6px;
+}
+.regbtn button{
+font-size: 1.3rem;
+border: 3px solid rgb(16, 36, 36);
+border-radius: 4px;
+color: rgb(150, 3, 137);
+padding: 16px 14px;
+background-color: rgb(154, 230, 79);
+/* background-color: rgb(192, 247, 138); */
+}
+.regbtn button:hover{
+border-radius: 3px;
+background-color: rgb(252, 125, 125);
+cursor: pointer;
+color: rgb(255, 255, 255);
+transition: 0.6s ease;
+}
+footer{
+margin:12px 23px;
+text-align: center;
+/* padding: 1px; */
+background-color: rgb(252, 125, 125);
+/* background-color: rgb(243, 168, 144); */
+color: white;
+}
+footer p{
+padding: 4px;
+}

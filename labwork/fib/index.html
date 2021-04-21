@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Fibonacci Series</title>
+</head>
+<body>
+<h1>Dipesh Gohil, 190023107002</h1>
+<h1>Fibonacci Series Example</h1>
+<span id="demo"></span>
+</body>
+<script>
+const number = parseInt(prompt('Enter any Fibonacci Number! '));
+let n1 = 0, n2 = 1, n3;
+document.write("Series is:-")
+for (let i = 1; i <= number; i++) {
+document.write(+" " + n1 + " ");
+n3 = n1 + n2;
+n1 = n2;
+n2 = n3;
+}
+</script>
+</html>
