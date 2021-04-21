@@ -1,0 +1,120 @@
+.navbar-nav a:hover
+{
+	color: grey !important;	
+}
+.navbar-nav a cust
+{
+	transition: 0.3s ease-in-out !important;
+}
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 55px;
+    max-width: 200px;
+}
+.no-space
+{
+	padding: 0;
+	margin: 0;
+}
+#myStyle a
+{
+	font-size: 19px;
+}
+#caption h3
+{
+	color: white;
+	font-size: 40px;
+	font-weight: lighter;
+}
+#caption
+{
+	top: 60%;
+	transform: translateY(-50%);
+}
+footer
+{
+	background-color: #333;
+	color: white;
+}
+footer a
+{
+	color: white;
+}
+footer li
+{
+	font-size:20px;
+	padding: 3px;
+}
+footer a:hover
+{
+	color: lightgrey;
+	text-decoration: none;
+}
+.fa-facebook-official:hover, .fa-instagram:hover, .fa-twitter:hover, .fa-youtube:hover
+{
+	color: grey;
+}
+.fa-facebook-official{color: #3b5998;}
+.fa-instagram{color: #bc2a8d;}
+.fa-twitter{color: #00aced;}
+.fa-youtube{color: #bb0000;}
+.icon a
+{
+	font-size: 4.5rem;
+}
+hr
+{
+	border-width: 2px;
+	border-color: #d5d5d5;
+}
+.padding
+{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.carousel-inner
+{
+    width: 100%;
+    height: 590px;
+}
+@media screen and (max-width:768px)
+{
+	#myStyle a
+	{
+		font-size: 15px;
+	}
+	#caption h2
+	{
+		font-size: 15px;
+	}
+	.padding
+	{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.card
+	{
+		margin-bottom: 1.5rem;
+	}
+	.btn-lg
+	{
+		padding: 0.3rem 0.6rem;
+  		font-size: .8rem;
+  		line-height: 1.1;
+ 		border-radius: 0.15rem;	
+	}
+	.icon a
+	{
+		font-size: 3rem;
+	}
+	.content h2,h3
+	{
+		font-size: 22px;
+	}
+	.carousel-inner
+	{
+		width: 100%;
+		height: auto;
+	}
+}
