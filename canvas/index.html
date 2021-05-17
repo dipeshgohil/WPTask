@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>HTML Canvas</h1>
+    <hr>
+
+    <div class="my-info" style="margin:5px; color:#000; text-align: right;">
+        <h3>Name : Dipesh Gohil</h3>
+        <h3>Enrollment : 190023107002</h3>
+    </div>
+
+    <div class="shape">
+        <h2>Different Shapes</h2>
+
+        <canvas id="square" width="200" height="200" style="border: 2px solid #726f6f;"></canvas><br>
+
+        <canvas id="rectangle" width="300" height="200" style="border: 2px solid #726f6f;" ></canvas><br>
+
+        <canvas id="traingle" width="300" height="200" style="border: none;"></canvas><br>
+
+        <canvas id="circle" width="230" height="200" style="border: none;"></canvas><br>
+
+        <canvas id="hexagone" width="200" height="200" style="border: none;"></canvas><br>
+
+    </div>
+
+    <script>
+        var square = document.getElementById("square");
+        var rectangle = document.getElementById("rectangle");
+        var traingle = document.getElementById("traingle");
+        var circle = document.getElementById("circle");
+        var hexagone = document.getElementById("hexagone");
+
+        var cd1 = square.getContext("2d");
+        var cd2 = rectangle.getContext("2d");
+        var cd3 = traingle.getContext("2d");
+        var cd4 = circle.getContext("2d");
+        var cd5 = hexagone.getContext("2d");
+
+        cd1.font = "30px Arial";
+        cd1.fillText("Square",40,100);
+        cd2.font = "30px Arial";
+        cd2.fillText("Rectangle",70,100);
+        cd3.font = "30px Arial";
+        cd3.fillText("Traingle",90,130);
+        cd4.font = "30px Arial";
+        cd4.fillText("Circle",60,110);
+        cd5.font = "30px Arial";
+        cd5.fillText("Octagonal",30,110);
+
+        cd3.moveTo(150,0);
+        cd3.lineTo(300,200);
+        cd3.moveTo(0,200);
+        cd3.lineTo(300,200);
+        cd3.moveTo(0,200);
+        cd3.lineTo(150,0);
+        cd3.stroke();
+
+        cd4.beginPath();
+        cd4.arc(100,100,90,0,2*Math.PI);
+        cd4.stroke();
+
+        cd5.moveTo(0,66.66);
+        cd5.lineTo(0,133.33);
+        cd5.moveTo(0,66.66);
+        cd5.lineTo(66.66,0);
+        cd5.moveTo(66.66,0);
+        cd5.lineTo(133.33,0);
+        cd5.moveTo(133.33,0);
+        cd5.lineTo(200,66.66);
+        cd5.moveTo(200,66.66);
+        cd5.lineTo(200,133.33);
+        cd5.moveTo(200,133.33);
+        cd5.lineTo(133.33,200);
+        cd5.moveTo(133.33,200);
+        cd5.lineTo(66.66,200);
+        cd5.moveTo(66.66,200);
+        cd5.lineTo(0,133.33);
+        cd5.stroke();
+
+    
+    </script>
+
+</body>
+</html>
